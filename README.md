@@ -7,7 +7,7 @@
 |Workshop|Time|Room|
 |---|---|---|
 |Regular|6:30 PM–8:00 PM|GDC 2.216|
-|Makeup|5:00 PM–6:30 PM|GDC 2.216|
+|Makeup|5:00 PM–6:30 PM|GDC 5.302|
 
 ## Instructors
 
