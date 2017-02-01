@@ -18,11 +18,5 @@ class ViewController: UIViewController {
         let worldEmoji = "🌎"
         myLabel.text = "Goodbye, World! \(worldEmoji)"
     }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-    }
 
 }
