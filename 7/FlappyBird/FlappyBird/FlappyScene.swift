@@ -28,7 +28,7 @@ class FlappyScene: SKScene {
         
         // Add bird
         self.addChild(birdNode)
-        birdNode.position =
+        birdNode.position = .zero
         
         self.backgroundColor = SKColor(red: 113.0 / 255.0, green: 197.0 / 255.0, blue: 207.0 / 255.0, alpha: 1.0)
         
