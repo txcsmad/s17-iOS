@@ -26,13 +26,11 @@ class FlappyScene: SKScene {
     override func didMove(to view: SKView) {
         super.didMove(to: view)
         
-        // Add bird
-        self.addChild(birdNode)
-        birdNode.position = .zero
-        
         self.backgroundColor = SKColor(red: 113.0 / 255.0, green: 197.0 / 255.0, blue: 207.0 / 255.0, alpha: 1.0)
         
-        setUpBird()
+        // Add bird
+        self.addChild(birdNode)
+        birdNode.position = self.frame.center
     }
     
 }
