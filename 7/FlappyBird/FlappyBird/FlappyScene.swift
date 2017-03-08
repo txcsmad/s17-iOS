@@ -40,7 +40,31 @@ class FlappyScene: SKScene {
     }()
     
     private func setUpGround() {
-        let groundTexture = SKTexture(
+        let groundTexture = SKTexture(image: #imageLiteral(resourceName: "Ground"))
+        groundTexture.filteringMode = .nearest
+        
+        // Actions for moving the ground nodes
+        let moveGroundAction = SKAction.moveBy(x: -groundTexture.size().width * 2, y: 0, duration: 1)
+        let resetGroundAction = SKAction.moveBy(x: groundTexture.size().width * 2, y: 0, duration: 0)
+        let groundSequenceAction = SKAction.sequence([moveGroundAction, resetGroundAction])
+        let moveGroundForeverAction = SKAction.repeatForever(groundSequenceAction)
+        
+        // How many ground nodes we'll need to cover the screen
+        let groundCount = Int(ceil(frame.size.width / (groundTexture.size().width * 2))) + 1
+        
+        for n in 0..<groundCount {
+            let groundNode = SKSpriteNode(texture: groundTexture)
+            groundNode.setScale(2)
+            
+            groundNode.position = CGPoint(x: CGFloat(n) * groundNode.size.width + (groundNode.size.width / 2), y: groundNode.size.height / 2)
+            
+            groundNode.physicsBody = SKPhysicsBody(rectangleOf: groundNode.size)
+            groundNode.physicsBody?.isDynamic = false
+            
+            groundNode.run(moveGroundForeverAction)
+            
+            self.addChild(groundNode)
+        }
     }
     
     override func didMove(to view: SKView) {
