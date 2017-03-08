@@ -15,6 +15,7 @@
 		8846A1BB1E6F8BB200BE9F50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8846A1B91E6F8BB200BE9F50 /* Main.storyboard */; };
 		8846A1BD1E6F8BB200BE9F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8846A1BC1E6F8BB200BE9F50 /* Assets.xcassets */; };
 		8846A1C01E6F8BB200BE9F50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8846A1BE1E6F8BB200BE9F50 /* LaunchScreen.storyboard */; };
+		8846A1C81E6F8D9100BE9F50 /* FlappyScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8846A1C71E6F8D9100BE9F50 /* FlappyScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8846A1BC1E6F8BB200BE9F50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8846A1BF1E6F8BB200BE9F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8846A1C11E6F8BB200BE9F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8846A1C71E6F8D9100BE9F50 /* FlappyScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlappyScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				8846A1B11E6F8BB200BE9F50 /* GameScene.sks */,
 				8846A1B31E6F8BB200BE9F50 /* Actions.sks */,
 				8846A1B51E6F8BB200BE9F50 /* GameScene.swift */,
+				8846A1C71E6F8D9100BE9F50 /* FlappyScene.swift */,
 				8846A1B71E6F8BB200BE9F50 /* GameViewController.swift */,
 				8846A1B91E6F8BB200BE9F50 /* Main.storyboard */,
 				8846A1BC1E6F8BB200BE9F50 /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 			files = (
 				8846A1B61E6F8BB200BE9F50 /* GameScene.swift in Sources */,
 				8846A1B81E6F8BB200BE9F50 /* GameViewController.swift in Sources */,
+				8846A1C81E6F8D9100BE9F50 /* FlappyScene.swift in Sources */,
 				8846A1B01E6F8BB200BE9F50 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
