@@ -63,6 +63,8 @@ class FlappyScene: SKScene {
                 return value
             }
         }
+        
+        birdNode.zRotation = clamp(min: -1, max: 0.5, value: value)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
