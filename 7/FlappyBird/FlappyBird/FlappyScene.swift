@@ -53,6 +53,12 @@ class FlappyScene: SKScene {
         birdNode.position = self.frame.center
     }
     
+    override func update(_ currentTime: TimeInterval) {
+        func clamp(min: CGFloat, max: CGFloat, value: CGFloat) {
+            if 
+        }
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         birdNode.physicsBody?.velocity = .zero
         birdNode.physicsBody?.applyImpulse(CGVector(dx: 0, dy: 10))
