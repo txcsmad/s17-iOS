@@ -24,11 +24,13 @@ class FlappyScene: SKScene {
         
         let birdTexture2 = SKTexture(image: #imageLiteral(resourceName: "Bird2"))
         birdTexture2.filteringMode = .nearest
-        
-        let flapAction = SKAction.animate
-        
+
         let birdNode = SKSpriteNode(texture: birdTexture1)
         birdNode.setScale(2)
+        
+        let flapAction = SKAction.animate(with: [birdTexture2, birdTexture1], timePerFrame: 0.2)
+        let flapForeverAction = SKAction.repeatForever(flapAction)
+        birdNode.run(flapForeverAction)
         
         return birdNode
     }()
