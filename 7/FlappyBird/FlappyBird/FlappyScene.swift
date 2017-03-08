@@ -13,7 +13,7 @@ class FlappyScene: SKScene {
     private var birdNode: SKSpriteNode?
     
     private func setUpBird() {
-        
+        let 
     }
     
     override func didMove(to view: SKView) {
