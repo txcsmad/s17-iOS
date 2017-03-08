@@ -25,6 +25,8 @@ class FlappyScene: SKScene {
         let birdTexture2 = SKTexture(image: #imageLiteral(resourceName: "Bird2"))
         birdTexture2.filteringMode = .nearest
         
+        let flapAction = SKAction.animate
+        
         let birdNode = SKSpriteNode(texture: birdTexture1)
         birdNode.setScale(2)
         
