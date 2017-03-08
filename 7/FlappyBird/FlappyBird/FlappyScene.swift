@@ -32,6 +32,8 @@ class FlappyScene: SKScene {
         let flapForeverAction = SKAction.repeatForever(flapAction)
         birdNode.run(flapForeverAction)
         
+        birdNode.physicsBody = SKPhysicsBody(texture: birdTexture, size: <#T##CGSize#>)
+        
         return birdNode
     }()
     
