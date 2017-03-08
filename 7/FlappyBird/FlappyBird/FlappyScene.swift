@@ -54,7 +54,7 @@ class FlappyScene: SKScene {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
+        birdNode.physicsBody?.applyImpulse(<#T##impulse: CGVector##CGVector#>)
     }
     
 }
