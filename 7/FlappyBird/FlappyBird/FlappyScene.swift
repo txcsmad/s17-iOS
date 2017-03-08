@@ -53,4 +53,8 @@ class FlappyScene: SKScene {
         birdNode.position = self.frame.center
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+    }
+    
 }
