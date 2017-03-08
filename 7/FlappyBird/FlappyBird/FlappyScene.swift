@@ -10,6 +10,8 @@ import SpriteKit
 
 class FlappyScene: SKScene {
 
+    private var birdNode: SKSpriteNode?
+    
     override func didMove(to view: SKView) {
         super.didMove(to: view)
         
