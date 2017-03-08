@@ -10,7 +10,7 @@ import SpriteKit
 
 class FlappyScene: SKScene {
 
-    private var birdNode: SKSpriteNode?
+    private var birdNode: SKSpriteNode!
     
     private func setUpBird() {
         let birdTexture1 = SKTexture(image: #imageLiteral(resourceName: "Bird1"))
@@ -22,7 +22,7 @@ class FlappyScene: SKScene {
         self.birdNode = SKSpriteNode(texture: birdTexture1)
         self.birdNode?.setScale(2)
         
-        self.addChild(<#T##node: SKNode##SKNode#>)
+        self.addChild(birdNode)
     }
     
     override func didMove(to view: SKView) {
