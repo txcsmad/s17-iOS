@@ -14,6 +14,7 @@ class FlappyScene: SKScene {
     
     private func setUpBird() {
         
+        
     }
     
     override func didMove(to view: SKView) {
