@@ -13,7 +13,11 @@ class FlappyScene: SKScene {
     private var birdNode: SKSpriteNode?
     
     private func setUpBird() {
+        let birdTexture1 = SKTexture(image: #imageLiteral(resourceName: "Bird1"))
+        birdTexture1.filteringMode = .nearest
         
+        let birdTexture2 = SKTexture(image: #imageLiteral(resourceName: "Bird2"))
+        birdTexture2.filteringMode = .nearest
     }
     
     override func didMove(to view: SKView) {
