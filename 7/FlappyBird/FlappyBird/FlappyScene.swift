@@ -44,6 +44,10 @@ class FlappyScene: SKScene {
         
         self.backgroundColor = SKColor(red: 113.0 / 255.0, green: 197.0 / 255.0, blue: 207.0 / 255.0, alpha: 1.0)
         
+        // World physics
+        self.physicsWorld.gravity = CGVector(dx: 0, dy: -5)
+        self.physicsBody = SKPhysicsBody(edgeLoopFrom: self.frame)
+        
         // Add bird
         self.addChild(birdNode)
         birdNode.position = self.frame.center
