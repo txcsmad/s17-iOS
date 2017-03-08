@@ -55,7 +55,13 @@ class FlappyScene: SKScene {
     
     override func update(_ currentTime: TimeInterval) {
         func clamp(min: CGFloat, max: CGFloat, value: CGFloat) {
-            if 
+            if value > max {
+                return max
+            } else if value < min {
+                return min
+            } else {
+                return value
+            }
         }
     }
     
