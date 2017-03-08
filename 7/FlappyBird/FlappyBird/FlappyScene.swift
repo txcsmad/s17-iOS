@@ -10,17 +10,23 @@ import SpriteKit
 
 class FlappyScene: SKScene {
 
-    private var birdNode: SKSpriteNode!
-    
-    private func setUpBird() {
+    private var birdNode: SKSpriteNode = {
         let birdTexture1 = SKTexture(image: #imageLiteral(resourceName: "Bird1"))
         birdTexture1.filteringMode = .nearest
         
         let birdTexture2 = SKTexture(image: #imageLiteral(resourceName: "Bird2"))
         birdTexture2.filteringMode = .nearest
         
-        self.birdNode = SKSpriteNode(texture: birdTexture1)
-        self.birdNode?.setScale(2)
+        let birdNode = SKSpriteNode(texture: birdTexture1)
+        
+        self.birdNode =
+        self.birdNode.setScale(2)
+        
+        return birdNote
+    }()
+    
+    private func setUpBird() {
+
         
         self.addChild(birdNode)
     }
