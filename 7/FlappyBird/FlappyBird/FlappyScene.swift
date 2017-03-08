@@ -54,7 +54,7 @@ class FlappyScene: SKScene {
     }
     
     override func update(_ currentTime: TimeInterval) {
-        func clamp(min: CGFloat, max: CGFloat, value: CGFloat) {
+        func clamp(min: CGFloat, max: CGFloat, value: CGFloat) -> CGFloat {
             if value > max {
                 return max
             } else if value < min {
@@ -64,6 +64,7 @@ class FlappyScene: SKScene {
             }
         }
         
+        let value = birdNode.physicsBody!.velocity.dy * (birdNode.physicsBody!.velocity.dy < 0 ? 0.003 : 0.001)
         birdNode.zRotation = clamp(min: -1, max: 0.5, value: value)
     }
     
