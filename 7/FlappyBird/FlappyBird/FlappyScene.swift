@@ -39,6 +39,10 @@ class FlappyScene: SKScene {
         return birdNode
     }()
     
+    private func setUpGround() {
+        let groundTexture = SKTexture(
+    }
+    
     override func didMove(to view: SKView) {
         super.didMove(to: view)
         
@@ -51,6 +55,9 @@ class FlappyScene: SKScene {
         // Add bird
         self.addChild(birdNode)
         birdNode.position = self.frame.center
+        
+        // Add ground
+        self.setUpGround()
     }
     
     override func update(_ currentTime: TimeInterval) {
